@@ -96,3 +96,10 @@ body {
     border: none !important;
 }
 
+/* Home Page */
+.home-page {
+    background-color: #d6d0d0 !important;
+    text-align: center;
+    justify-content: center;
+}
+
