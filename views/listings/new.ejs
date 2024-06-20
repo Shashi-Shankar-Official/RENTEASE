@@ -3,15 +3,18 @@
     <div class="col-8 offset-2">
         <br>
     <h3>Create a new Listing</h3>
-    <form method="POST" action="/listings">
+    <form method="POST" action="/listings" class="needs-validation" novalidate>
         <div class="mb-3">
             <label for="title" class="form-label" >Title</label>
-            <input name="listing[title]" placeholder="enter title"  type="text" class="form-control" >
+            <input name="listing[title]" placeholder="enter title"  type="text" class="form-control" required >
+            <div class="valid-feedback">Title looks good!</div>
+            <div class="invalid-feedback">There must be a title</div>
         </div>
         
         <div class="mb-3">
             <label for="description" class="form-label" >Description</label>
-            <textarea name="listing[description]" type="text" class="form-control" ></textarea>
+            <textarea name="listing[description]" type="text" class="form-control" required ></textarea>
+            <div class="invalid-feedback">Please enter a valid description</div>
         </div>
         
         <div class="mb-3">
@@ -22,12 +25,14 @@
         <div class="row">
             <div class="mb-3 col-md-4">
             <label for="price" class="form-label" >Price</label>
-            <input name="listing[price]" placeholder="enter price" type="number" class="form-control" >
+            <input name="listing[price]" placeholder="enter price" type="number" class="form-control" required >
+            <div class="invalid-feedback">Price must be greater than 0</div>
             </div>
         
             <div class="mb-3 col-md-8">
             <label for="country" class="form-label" >Country</label>
-            <input name="listing[country]" placeholder="enter country" type="text" class="form-control" >
+            <input name="listing[country]" placeholder="enter country" type="text" class="form-control" required >
+            <div class="invalid-feedback">country in which the property is located</div>
             </div>
         </div>
         
@@ -35,7 +40,8 @@
         
         <div class="mb-3">
             <label for="location" class="form-label" >Location</label>
-            <input name="listing[location]" placeholder="enter location" type="text" class="form-control" >
+            <input name="listing[location]" placeholder="enter location" type="text" class="form-control" required >
+            <div class="invalid-feedback">Local adress of the property</div>
         </div>
         
         
