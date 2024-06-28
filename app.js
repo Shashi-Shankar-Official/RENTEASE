@@ -46,7 +46,7 @@ const sessionOptions = {
 };
 
 app.get("/", (req,res) => {
-    res.render("listings/home.ejs");
+    res.send("You are at home!");
 });
 
 app.use(session(sessionOptions));
