@@ -70,7 +70,7 @@ app.use((req,res,next) => {
 // app.get("/demouser", async (req,res) => {
 //     let fakeUser = new User({
 //         email: "student@example.com",
-//         username: "delta-student"
+//         username: "baburao"
 //     });
 
 //     let registeredUser = await User.register(fakeUser, "helloWorld");
