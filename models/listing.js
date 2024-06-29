@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const Review = require("./review.js");
 const User = require("./user.js");
+const { string } = require("joi");
 
 const listingSchema = new Schema({
     title: {
@@ -10,10 +11,8 @@ const listingSchema = new Schema({
     },
     description: String,
     image: {       
-        type: String,
-        default: "https://t4.ftcdn.net/jpg/04/00/24/31/360_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg",
-        set: (v) => v === ""? "https://t4.ftcdn.net/jpg/04/00/24/31/360_F_400243185_BOxON3h9avMUX10RsDkt3pJ8iQx72kS3.jpg" : v 
-        
+        url:String,
+        filename: String,
     },
     price: Number, 
     location: String,
