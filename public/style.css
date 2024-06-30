@@ -24,6 +24,18 @@ body {
 }
 
 /* Footer */
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-socials i {
+    margin-right: 1rem;
+}
 .f-info-links a {
     text-decoration: none;
     color: #222222;
@@ -42,19 +54,9 @@ body {
     font-size: 1.2rem;
 }
 
-.f-info-socials i {
-    margin-right: 1rem;
-}
 
-.f-info {
-    text-align: center;
-    display: flex;
-    height: 8rem;
-    background-color: #ebebeb;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
-}
+
+
 
 /* Cards */
 .listing-card {
