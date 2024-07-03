@@ -2,29 +2,46 @@
 
 RentEase is a full-stack web application inspired by Airbnb, designed to facilitate property rentals. The application allows users to browse, list, and book properties with ease. This project demonstrates the integration of various technologies including EJS, Express.js, Node.js, JavaScript, and MongoDB.
 
+## Live Demo
+
+Check out the live site: [RentEase](https://rentease-ew1v.onrender.com/listings)
+
 ## Features
 
-- **User Authentication:** Secure user registration and login using JSON Web Tokens (JWT).
+- **User Authentication:** Secure user authentication and authorization using Passport and Passport-Local
 - **Property Listings:** Users can view, search, and filter property listings.
-- **Booking System:** Functionality for booking properties, viewing booking history, and managing reservations.
 - **User Reviews:** Users can leave reviews and ratings for properties.
 - **Responsive Design:** Fully responsive design for an optimal user experience on both desktop and mobile devices.
 - **RESTful APIs:** Backend API endpoints to handle all CRUD operations.
+- Middleware for efficient request handling, logging, and error management
+- MVC architecture for maintainability and scalability
 
-## Technologies Used
+## Technology Stack
 
-- **Frontend:** EJS, HTML, CSS, JavaScript
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Authentication:** JSON Web Tokens (JWT)
-- **Version Control:** Git, GitHub
-- **Deployment:** Heroku/AWS (choose the one you used)
+- **Frontend:**
+  - Embedded JavaScript (EJS)
+  - Bootstrap
+
+- **Backend:**
+  - Node.js
+  - Express.js
+
+- **Database:**
+  - MongoDB Atlas
+
+- **Authentication & Authorization:**
+  - Passport
+  - Passport-Local
+
+- **Other:**
+  - RESTful APIs
+  - Git for version control
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/RentEase.git
+    git clone https://github.com/Shashi-Shankar-Official/RENTEASE.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -49,7 +66,7 @@ RentEase is a full-stack web application inspired by Airbnb, designed to facilit
 
 ## Usage
 
-- Visit `http://localhost:3000` in your web browser.
+- Visit `http://localhost:80800` in your web browser.
 - Register a new account or log in with an existing account.
 - Browse properties, make bookings, and leave reviews.
 
